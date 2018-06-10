@@ -1,6 +1,6 @@
 # this is class calculator
 class Calculator
-  def self.calculate(str)
-    instance_eval str
+  def self.calculate(a, operator, e)
+    [a, e].inject(operator)
   end
 end
